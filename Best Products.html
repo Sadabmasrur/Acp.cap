@@ -81,13 +81,105 @@
       .instagram-link:hover {
         text-decoration: underline;
       }
-    </style>
+      
+      p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 400px;
+  
+}
+
+.pimg1 {
+  background-image: url("https://images.unsplash.com/photo-1640955014216-75201056c829?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.pimg2 {
+  background-image: url("https://images.unsplash.com/photo-1625842268584-8f3296236761?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.pimg3 {
+  background-image: url("https://images.unsplash.com/photo-1512729343400-4fcf83a18f72?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.pimg1:hover,
+.pimg2:hover,
+.pimg3:hover {
+  opacity: 10;
+}
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-dark {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #d9f2e7, #c3e5f7);
+  color: #000000;
+  border-radius: 8px;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 27px;
+  letter-spacing: 4px;
+  padding: 20px 25px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 5px;
+}
+
+.ptext .border {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  opacity: 0.5  ;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll; 
+  }
+
+  .ptext {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .section {
+    padding: 30px 20px; 
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+      
+      </style>
   </head>
   <body>
     <div class="topnav">
       <a href="Home.html">Home</a>
       <a class="active" href="Best Products.html">Best Products</a>
-      <a href="Comparisons.html">Comparisons</a>
+
       <a href="Deals.html">Deals</a>
       <a href="News.html">News</a>
       <a href="Reviews.html">Reviews</a>
@@ -106,6 +198,52 @@
           >Instagram</a
         >
       </p>
+    </div>
+
+    <h2 style="font-size: 40px; background-color:  linear-gradient(135deg, #d9f2e7, #c3e5f7);"
+      <center></center>
+
+
+
+    <section class="section section-dark">
+      <h2>Section one</h2>
+      <p>
+     The laptop screen displays a 3D video game scene where the player appears to be in an outdoor environment with trees, buildings, and colorful flags. The game character, visible from the back, is wearing a vest with a bright red and white design.
+The laptop has RGB backlighting on the keyboard, glowing in teal-blue colors, which is a common feature in gaming laptops. The brand name "EXCALIBUR" is visible below the screen. The laptop is plugged into a charger, and a wired mouse is connected, which the person is holding.
+To the right side of the image, there's a gaming mousepad with a colorful RGB light strip. Part of a gaming headset with a glowing, circular RGB light effect is visible in the foreground. The setting is a desk environment, likely used for gaming or streaming.
+      </p>
+    </section>
+
+    <div class="pimg1">
+      <div class="ptext">
+        <span class="border trans"> 3D video game  </span>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2>Section Two</h2>
+      <p>
+      This image shows a vibrant and well-coordinated computer workstation featuring a widescreen monitor with an orange wallpaper of Raichu, a Pokémon character. The desk setup has a strong yellow and black theme, including a mechanical keyboard, matching yellow mouse, and mousepad. A green reusable cup is placed to the side, while a DSLR camera with a red strap sits nearby, suggesting a photography interest. The wooden desk and partitioned background add a modern touch, creating a clean, playful, and energetic workspace ideal for creativity or casual use.
+      </p>
+    </section>
+
+    <div class="pimg2">
+      <div class="ptext">
+        <span class="border trans"> Computer workstation</span>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2>Section Three</h2>
+      <p>
+       This image showcases a cozy, minimalist workspace featuring a sleek iMac computer on a wooden desk with a dark grey mat. To the left, there’s a stylish grey desk lamp and a phone stand, while the monitor displays a clean, creative webpage. A potted monstera plant adds a natural and vibrant touch to the space. On the right, a printer, a clock, and a camera lens are neatly arranged, hinting at a creative or photography-focused setup. The organized desk, warm lighting, and balanced decor create an inviting and productive workspace with a modern, nature-inspired aesthetic.
+      </p>
+    </section>
+
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border trans">  iMac computer</span>
+      </div>
     </div>
   </body>
 </html>

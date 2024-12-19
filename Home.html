@@ -8,6 +8,88 @@
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
         background: linear-gradient(135deg, #d9f2e7, #c3e5f7);
+        color: #333;
+        line-height: 1.6;
+      }
+
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        text-transform: capitalize;
+        margin-top: 10px;
+        color: #2f00ff;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .carousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 410px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .myslides {
+        display: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .app-info {
+        background-color: #3498db;
+        color: #fff;
+        padding: 25px 20px;
+        text-align: center;
+        margin: 25px auto;
+        border-radius: 8px;
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .app-info h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      .app-info p {
+        font-size: 1.1rem;
+        margin: 0 auto;
+        line-height: 1.8;
+      }
+
+      .features {
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .features h2 {
+        color: #2c3e50;
+        font-size: 2rem;
+      }
+
+      .features ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .features li {
+        background: #ecf0f1;
+        margin: 10px auto;
+        padding: 15px;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
 
       .topnav {
@@ -48,6 +130,7 @@
           padding: 10px 20px;
         }
       }
+
       .footer {
         position: fixed;
         width: 100%;
@@ -89,7 +172,6 @@
     <div class="topnav">
       <a class="active" href="Home.html">Home</a>
       <a href="Best Products.html">Best Products</a>
-      <a href="Comparisons.html">Comparisons</a>
       <a href="Deals.html">Deals</a>
       <a href="News.html">News</a>
       <a href="Reviews.html">Reviews</a>
@@ -109,5 +191,75 @@
         >
       </p>
     </div>
+
+    <h1>InfoByte</h1>
+
+    <div class="carousel-container">
+      <img
+        class="myslides"
+        src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=2042&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Slide 1"
+      />
+
+      <img
+        class="myslides"
+        src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=1957&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Slide 2"
+      />
+
+      <img
+        class="myslides"
+        src="https://plus.unsplash.com/premium_photo-1682141878168-5dace8e1785d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Slide 3"
+      />
+    </div>
+
+    <div class="app-info">
+      <h2>Welcome to InfoByte!</h2>
+      <p>
+        My goal is to help you make informed decisions by offering detailed
+        insights and expert opinions. Here, you'll find comprehensive reviews,
+        detailed comparisons, and the best deals on a wide range of computer
+        products, from cutting-edge hardware to essential accessories. My
+        content is tailored to guide both beginners and tech-savvy users through
+        the complexities of choosing the right products. I strive to deliver
+        unbiased insights, expert opinions, and the latest industry news to keep
+        you informed and empowered. Whether you're looking for a detailed
+        product analysis, exclusive deals, or up-to-date tech trends, my website
+        is your one-stop destination.
+      </p>
+    </div>
+
+    <div class="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>📅 Tech News and Updates</li>
+        <li>🤖 Tech Reviews and Recommendations</li>
+        <li>🔒 Comprehensive Tutorials and Guides</li>
+        <li>📊 Tech Stack Showcase</li>
+      </ul>
+    </div>
+
+    <script>
+      var index = 0;
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("myslides");
+
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+
+        index++;
+        if (index > x.length) {
+          index = 1;
+        }
+        x[index - 1].style.display = "block";
+
+        setTimeout(carousel, 2000);
+      }
+      carousel();
+    </script>
   </body>
 </html>
