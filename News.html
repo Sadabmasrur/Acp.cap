@@ -82,6 +82,84 @@
       .instagram-link:hover {
         text-decoration: underline;
       }
+
+       {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      main {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .latest-news {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .latest-news .container {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .latest-news h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .latest-news h2 {
+        margin: 0;
+        color: #333;
+      }
+
+      .latest-news p {
+        margin: 10px 0;
+        color: #555;
+      }
+
+      .latest-news a {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .latest-news a:hover {
+        text-decoration: underline;
+      }
+
+      .trending-topics {
+        margin-top: 40px;
+      }
+
+      .trending-topics ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .trending-topics li {
+        margin: 10px 0;
+      }
+
+      .trending-topics a {
+        text-decoration: none;
+        color: #007bff;
+      }
+
+      .trending-topics a:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
@@ -111,8 +189,9 @@
     <center>
       <main>
         <section class="latest-news">
-          <b><h1>Latest Tech news</h1></b>
-          <article>
+          <h1>Latest Tech News</h1>
+
+          <div class="container">
             <h2>New AI model revolutionizes tech industry</h2>
             <p><strong>Published:</strong> December 19, 2024</p>
             <p>
@@ -120,10 +199,14 @@
               that promises to revolutionize various industries. Experts predict
               it will have a transformative impact.
             </p>
-            <a href="#">Read more</a>
-          </article>
+            <a
+              href="https://www.google.com/search?q=New+AI+model+revolutionizes+tech+industry"
+              target="_blank"
+              >Read more</a
+            >
+          </div>
 
-          <article>
+          <div class="container">
             <h2>Top 10 gadgets to watch out for in 2025</h2>
             <p><strong>Published:</strong> December 18, 2024</p>
             <p>
@@ -131,10 +214,14 @@
               innovative gadgets that are set to hit the market. Here's a sneak
               peek.
             </p>
-            <a href="#">Read more</a>
-          </article>
+            <a
+              href="https://www.google.com/search?q=Top+10+gadgets+to+watch+out+for+in+2025"
+              target="_blank"
+              >Read more</a
+            >
+          </div>
 
-          <article>
+          <div class="container">
             <h2>Artificial intelligence-powered chatbots</h2>
             <p><strong>Published:</strong> June 18, 2024</p>
             <p>
@@ -143,10 +230,14 @@
               learning and natural language processing to simulate human
               conversation.
             </p>
-            <a href="#">Read more</a>
-          </article>
+            <a
+              href="https://www.google.com/search?q=Artificial+intelligence-powered+chatbots"
+              target="_blank"
+              >Read more</a
+            >
+          </div>
 
-          <article>
+          <div class="container">
             <h2>Brain-computer interfaces (BCIs)</h2>
             <p><strong>Published:</strong> October 11, 2024</p>
             <p>
@@ -155,19 +246,17 @@
               Potential uses include aiding individuals with disabilities and
               improving human-computer interaction.
             </p>
-            <a href="#">Read more</a>
-          </article>
+            <a
+              href="https://www.google.com/search?q=Brain-computer+interfaces+(BCIs)"
+              target="_blank"
+              >Read more</a
+            >
+          </div>
         </section>
 
         <section class="trending-topics">
-          <h2>Trending Topics</h2>
-          <ul>
-            <li><a href="#">Meta's New AR Glasses</a></li>
-            <li><a href="#">Quantum Computing Breakthroughs</a></li>
-            <li><a href="#">Electric Vehicles Updates</a></li>
-            <li><a href="#">SpaceX's Mars Mission</a></li>
-          </ul>
-        </section>
+          <h2>That's all of the news for today</h2>
+        
       </main>
     </center>
   </body>
